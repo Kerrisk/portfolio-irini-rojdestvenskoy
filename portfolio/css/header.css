@@ -1,0 +1,193 @@
+.header{
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    background-color: black;
+}
+.header__nav{
+    margin-left:auto;
+    margin-right: 210px;
+}
+
+.header__list{
+    list-style: none;
+    display:flex;
+}
+
+.header__item{
+    margin-right: 110px; 
+}
+
+.header__item a{
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.index__logo {
+    display: none;
+}
+.header__logo{
+    margin-top:5px;
+}
+
+a.navodka_vis1{
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    }
+a.navodka:hover{
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}   
+
+
+
+
+/************ГАМБУРГЕР МЕНЮ************/
+@media (max-width:1750px){
+    .header__nav{
+    margin-right:auto;
+}
+}
+@media (max-width: 1300px){
+    .index__logo{
+        margin-top:5px;
+        display:flex;
+    }
+    .header__nav{
+    margin-right:210px;
+}
+    .header__list{
+        display:none;
+    }
+
+    .header{
+        flex-wrap:wrap-reverse;
+        justify-content: center;
+        padding:10px
+    }
+    .social__hamb{
+        display:flex;
+        justify-content: space-between;
+    }  
+    /* .hamb{
+    }  */
+    .hamb__field{
+        padding: 0px 10px;
+        cursor: pointer;
+    }
+    .bar{
+        display:block;
+        width:30px;
+        height:3px;
+        margin:6px auto;
+        background-color: white;
+        transition: 0.2s;
+    }
+    .social__net{
+        margin-right: 15px;
+        padding-top:3px;
+    }
+    .whatspp{
+        margin-right: -5px;
+    }
+    .discrd{
+        margin-right: -10px;
+    } 
+    .popup{
+        position:fixed;
+        top:55px;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: 10;
+        display:flex; /* зачем */
+        transition: 0.3s;
+    }
+    .popup.open{
+        left:0;
+    }
+    /*СПРОСИТЬ У Риты как работает тут FLEX и его компоненты */
+    .popup .header__list{
+        width: 100%;
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 50px 0px;
+    }
+    .header__item{
+        margin-right: 0px; 
+    }
+    a.navodka:hover{
+        border-bottom: 0px;
+        padding-bottom: 0px
+    }  
+    .popup .header__list .header__item > .navodka{
+    padding: 25px 0px;
+    display: flex;
+    justify-content: center;
+    font-size:20px;
+    font-weight: bold;
+    }
+    .popup .header__list .header__item{
+        width: 100%;
+    }
+    .popup .header__list .header__item:hover{
+        background-color: gray;
+    }
+    .hamb__field.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamb__field.active .bar:nth-child(1){
+        transform: translateY(9px) rotate(-45deg);
+    }
+    .hamb__field.active .bar:nth-child(3){
+        transform: translateY(-9px) rotate(45deg);
+    }
+    body.noscroll{
+        overflow:hidden
+    }
+} 
+@media (max-width:550px){
+    .header{
+        padding:8px;
+    } 
+    .social__net{
+        margin-right: 210px;
+    }
+    .popup{
+        top:79px;
+    }
+}
+
+/***************2************/
+
+
+
+.header__item2{
+    margin: 5px 70px 0px 0px ;
+}
+
+.header__item2 a{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.hr{ 
+    height: 7px;
+    border-bottom: 2px solid rgb(179, 179, 179);
+    width: 90% 
+}
+a.navodka_vis2:visited{
+    color: gray;
+}
+
+a.navodka2:hover{
+    color: gray;
+}

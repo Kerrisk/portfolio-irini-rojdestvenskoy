@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color: black;
+    cursor: default;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1750px;
+    margin: 0 auto;
+}
